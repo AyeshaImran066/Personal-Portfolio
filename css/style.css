@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/bg.jpg") center center / cover no-repeat fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #8a63b3;
+  color: white;
+  padding: 15px 0;
+}
+
+nav {
+  background-color: #8a63b3;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+}
+
+nav a:hover {
+  background-color: #4f3a65;
+}
+
+.container {
+  width: 960px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #4f3a65;
+  margin-bottom: 10px;
+}
+
+.float-box {
+  width: 45%;
+  margin: 2%;
+  float: left;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.float-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery {
+  width: 960px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #8a63b3;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+form {
+  background: white;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4f3a65;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8a63b3;
+  box-shadow: 0 0 5px rgba(138, 99, 179, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #8a63b3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #4f3a65;
+}
